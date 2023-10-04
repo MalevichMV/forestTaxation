@@ -1,0 +1,160 @@
+.main{
+    padding-bottom: 10px;
+    width: 100%;
+
+    background-color:#f3f3f3;
+}
+.main__createNewRequest{
+    margin: 0 auto;
+    padding-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    &:hover  .main__CreateButton{
+        transform: scale(1.2);
+    }
+}
+.main__CreateButton {
+    font-size: 35px;
+    font-weight: 400;
+    border-radius: 50%;
+    line-height:48px;
+    width: 48px;
+    height: 48px;
+    color: #99c78d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform .3s;
+}
+.main__CreateText{
+    font-size: 18px;
+    padding-left: 25px;
+    color: #99c78d;
+    
+}
+.main__tabs{
+    padding-top: 30px;
+    display: block;
+    &:after{
+        margin-top: 15px;
+        display: block;
+        content: '';
+        height: 1px;
+        background-color: #CBCBCC;
+    } 
+}
+.main__tabsItem{
+    cursor: pointer;
+    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+    &:after{
+        position: absolute;
+        top: 33px;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #99c78d;
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.active_tab{
+    font-weight: bold;
+    &:after{
+        opacity: 1;
+    }
+}
+.main__pacts{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main__pactsItem{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border-radius: 11%;
+    box-shadow: 0px 1px 17px 5px rgba(34, 60, 80, 0.12);
+    display: flex;
+    padding: 20px;
+}
+.main__pactsImg{
+    width: 60px;
+    height: auto;
+}
+.main__pactsTittle{
+    margin-bottom: 5px;
+    text-align: start;
+    font-weight: bold;
+    font-size: 21px;
+    
+}
+.main__pactsInfo{
+    padding-left: 10px;
+}
+.main__pactsSubinfo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+}
+.main__pactsInfoDetail span{
+    color: #4e4e4e;
+    font-weight: 600;
+    
+}
+.main__pactsInfoDetail{
+    margin-right: 15px;
+    margin-top: 3px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.main__SelectionButton {
+    background-color: #99c78d;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    &:hover {
+        background-color: #70a869;
+    } 
+}
+.deleteButton{
+    background-color: #ff2525;
+    &:hover {
+        background-color: #ff6161;
+    } 
+}
+.main__Button{
+    position: absolute;
+    left: 150px;
+    top: 12px;
+    background-color: #99c78d;
+    border: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    &:hover {
+        background-color: #70a869;
+    } 
+}
+.openMapBtn{
+    left: 265px;
+}

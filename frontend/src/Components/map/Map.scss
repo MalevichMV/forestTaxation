@@ -1,0 +1,12 @@
+.readyMap {
+    z-index: 999;
+    cursor: default;
+    overflow: hidden;
+    position: absolute;
+    right: -295px;
+    height: 500px;
+    width: 500px;
+    border-radius: 5%;
+    border: 2px solid #99c78d;
+    box-shadow: 0px 1px 17px 5px rgba(34, 60, 80, 0.12);
+}

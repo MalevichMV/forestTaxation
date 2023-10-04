@@ -1,0 +1,195 @@
+.applicationModal {
+    position: fixed;
+    top: 0;  
+    left: 50%; 
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transform: translateX(-50%);
+    background-color: #99c78d;
+    transition: opacity 0.5s ease-in-out;
+}
+.createNewApplication{
+    padding: 20px;
+    width: 785px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 25px;
+}
+.closeButton{
+    position: absolute;
+    color: #ffffff;
+    font-size: 50px;
+    transform: rotate(45deg);
+    right: 20px;
+    cursor: pointer;
+}
+.applicationModal__button{
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #99c78d;
+    background-color: #d3f7ca;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    &::hover{ background-color: #b2e3a9; }
+}
+
+.applicationModal__checkbox{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 16px;
+    appearance: none;
+    box-sizing: border-box;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    border: 2px solid #AEADAE;
+    transition: border .3s, background-color .3s;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transition: opacity .2s linear;
+        background-image: url('../../img/checkbox.svg');
+        width: 24px;
+        height: 24px;
+    }
+}
+.applicationModal__checkbox:checked:after {
+    opacity: 1;
+}
+.applicationModal__checkButton{
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.applicationModal__checkButton > label{
+    cursor: pointer;
+    line-height: 24px;
+}
+.applicationModal__checkbox:hover{
+    border: 2px solid #99c78d;
+}
+
+.leaflet-container {
+    height: 700px;
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+  }
+.myMap{
+    position: relative;
+    margin: 25px 0;
+}
+.mapButton{
+    position: absolute;
+    z-index: 999999;
+    top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: 2px solid rgba(0,0,0,0.2);
+    background-clip: padding-box;
+    background-color: #ffffff;
+    cursor: pointer;
+    &:hover{ background-color: #f4f4f4; }
+}
+.resetButton{
+    left: 75px;
+}
+.removeButton{
+    left: 193px
+}
+
+
+
+.startingForm-select{
+    position: relative;
+    margin-top: 40px;
+    
+}
+.startingForm-header{
+    position: relative;
+    height: 32px;
+    border-bottom: 2px solid #AEADAE;
+    transition: border-color .3s;
+    cursor: pointer;
+}
+.startingForm-header:first-child:hover{
+    border-color: #99c78d;
+}
+.startingForm-current{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.startingForm-dropDownPlaceholder{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color .3s, top .3s;
+}
+.startingForm-icon{
+    position: absolute;
+    right: 2px;
+    top: 12px;
+    height: 6px;
+    width: 6px;
+    border-bottom: 2px solid #99c78d;
+    border-right: 2px solid #99c78d;
+    transform: rotate(45deg);
+    transition: transform .3s;
+}
+.active_select{
+    .startingForm-icon{
+        transform: rotate(225deg);
+    }
+    .startingForm-header{
+        border-color: #99c78d;
+    }
+}
+.active_item{
+    color: #92ca84;
+}
+.startingForm-current:not(:empty) + .startingForm-dropDownPlaceholder{
+    top: -35%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7D7D7D;
+    cursor: default;
+}
+.startingForm-header:has(.startingForm-current:not(:empty))
+{
+    border-color: #99c78d;
+}
+.startingForm-body{
+    z-index: 9999999;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+}
+.startingForm-item{
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 8px 24px;
+}
+.startingForm-item:hover{
+    color:#FFFFFF;
+    background: #99c78d;
+}
+.startingForm-item:first-child{
+    padding-top: 16px;
+}
